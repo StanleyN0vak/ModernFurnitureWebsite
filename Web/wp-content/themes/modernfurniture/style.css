@@ -1,0 +1,15 @@
+/*
+Theme Name: Modern Furniture
+Text Domain: Modern Furnitute
+Author: Mateusz Szymański
+Author URI: www.linkedin.com/in/mateusz-szymański-186212339
+Description: Theme created especially for company Modern Furniture
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+
+header {
+    background-color: rgb(253, 205, 115);
+}
