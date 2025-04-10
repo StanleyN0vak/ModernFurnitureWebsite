@@ -1,0 +1,19 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "sass wp-content/themes/modernfurniture/scss/style.scss wp-content/themes/modernfurniture/assets/css/main.css",
+    "watch-css": "sass --watch wp-content/themes/modernfurniture/scss/style.scss:wp-content/themes/modernfurniture/assets/css/main.css"
+  },
+  "author": "Mateusz Szymański",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "sass": "^1.86.3"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.5",
+    "jquery": "^3.7.1"
+  }
+}

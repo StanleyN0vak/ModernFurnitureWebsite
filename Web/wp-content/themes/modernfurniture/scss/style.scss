@@ -1,0 +1,12 @@
+@import "../../../../node_modules/bootstrap/scss/bootstrap.scss";
+
+@import "_variables.scss";
+
+
+body {
+    background-color: $secondary;
+}
+
+header, footer {
+    background-color: $primary;
+}
