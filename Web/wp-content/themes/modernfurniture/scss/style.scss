@@ -1,12 +1,22 @@
 @import "../../../../node_modules/bootstrap/scss/bootstrap.scss";
 
 @import "_variables.scss";
+@import "components/heroUnit.scss";
 
 
 body {
+    color: $primary-text;
     background-color: $secondary;
 }
 
 header, footer {
     background-color: $primary;
+}
+
+h1 {
+    color: $primary-text;
+}
+
+h3 {
+    color: $secondary-text;
 }

@@ -11850,12 +11850,33 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.ms-hero {
+  position: relative;
+  margin-bottom: 0;
+}
+.ms-hero .ms-hero-header {
+  position: absolute;
+  top: 10rem;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
 body {
+  color: #FFFFFF;
   background-color: #181861;
 }
 
 header, footer {
   background-color: #D2A942;
+}
+
+h1, .h1 {
+  color: #FFFFFF;
+}
+
+h3, .h3 {
+  color: #D3D3D3;
 }
 
 /*# sourceMappingURL=main.css.map */
