@@ -2,6 +2,7 @@
 
 @import "_variables.scss";
 @import "components/heroUnit.scss";
+@import "pages/front-page.scss";
 
 
 body {
@@ -19,4 +20,24 @@ h1 {
 
 h3 {
     color: $secondary-text;
+}
+
+.ms-btn-primary{
+    background: $primary-btn;
+
+    a{
+        background: $primary-btn;
+
+        :hover{
+            background: $primary-btn-hover;
+        }
+    }
+
+    :hover{
+        background: $primary-btn-hover;
+    }
+}
+
+.ms-btn-secondary{
+    background: $secondary-btn;
 }

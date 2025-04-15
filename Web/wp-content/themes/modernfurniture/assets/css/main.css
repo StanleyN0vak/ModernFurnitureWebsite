@@ -11862,6 +11862,10 @@ textarea.form-control-lg {
   right: 0;
 }
 
+.ms-why {
+  background: #D2A942;
+}
+
 body {
   color: #FFFFFF;
   background-color: #181861;
@@ -11877,6 +11881,23 @@ h1, .h1 {
 
 h3, .h3 {
   color: #D3D3D3;
+}
+
+.ms-btn-primary {
+  background: #D2A942;
+}
+.ms-btn-primary a {
+  background: #D2A942;
+}
+.ms-btn-primary a :hover {
+  background: #f1bf3e;
+}
+.ms-btn-primary :hover {
+  background: #f1bf3e;
+}
+
+.ms-btn-secondary {
+  background: #181861;
 }
 
 /*# sourceMappingURL=main.css.map */
