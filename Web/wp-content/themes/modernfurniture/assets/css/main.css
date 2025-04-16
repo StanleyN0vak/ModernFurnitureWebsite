@@ -11861,6 +11861,12 @@ textarea.form-control-lg {
   bottom: 0;
   right: 0;
 }
+.ms-hero .ms-hero-step {
+  background-color: #181861;
+  max-width: 13rem;
+  height: 18rem;
+  padding: 2rem;
+}
 
 .ms-why {
   background: #D2A942;

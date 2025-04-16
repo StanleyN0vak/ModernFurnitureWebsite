@@ -9,4 +9,11 @@
         bottom: 0;
         right: 0;
     }
+
+    .ms-hero-step {
+        background-color: $secondary;
+        max-width: 13rem;
+        height: 18rem;
+        padding: 2rem;
+    }
 }
