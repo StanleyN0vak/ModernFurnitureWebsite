@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Themes - Twenty Twenty-Four package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-11-14 06:37:40+0000\n"
+"PO-Revision-Date: 2025-04-15 17:40:40+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -43,13 +43,13 @@ msgstr "Historia"
 msgid "Team"
 msgstr "Zespół"
 
-#: patterns/footer.php:74
-msgid "Contact Us"
-msgstr "Skontaktuj się z nami"
-
 #: patterns/footer.php:73
 msgid "Terms and Conditions"
-msgstr "Regulamin i zasady"
+msgstr "Regulamin"
+
+#: patterns/footer.php:74
+msgid "Contact Us"
+msgstr "Skontaktuj się z nami"
 
 #: patterns/posts-list.php
 msgctxt "Pattern title"
@@ -125,11 +125,6 @@ msgstr "2"
 msgctxt "Space size name"
 msgid "1"
 msgstr "1"
-
-#: styles/fossil.json styles/ice.json styles/maelstrom.json theme.json
-msgctxt "Font size name"
-msgid "Large"
-msgstr "Duży"
 
 #: styles/ember.json styles/fossil.json styles/ice.json styles/maelstrom.json
 #: styles/mint.json styles/onyx.json styles/rust.json theme.json
@@ -342,11 +337,6 @@ msgstr "Lód"
 msgctxt "Font size name"
 msgid "Extra Extra Large"
 msgstr "Bardzo Bardzo Duży"
-
-#: styles/fossil.json styles/ice.json styles/maelstrom.json theme.json
-msgctxt "Font size name"
-msgid "Small"
-msgstr "Małe"
 
 #: styles/fossil.json styles/maelstrom.json theme.json
 msgctxt "Font family name"
@@ -884,14 +874,24 @@ msgctxt "Example email in site footer"
 msgid "info@example.com"
 msgstr "info@example.com"
 
-#: patterns/footer.php:41 patterns/footer.php:47
-msgid "About"
-msgstr "O"
-
 #: patterns/gallery-full-screen-image.php
 msgctxt "Pattern title"
 msgid "Full screen image"
 msgstr "Obrazek na cały ekran"
+
+#: styles/fossil.json styles/ice.json styles/maelstrom.json theme.json
+msgctxt "Font size name"
+msgid "Large"
+msgstr "Duże"
+
+#: styles/fossil.json styles/ice.json styles/maelstrom.json theme.json
+msgctxt "Font size name"
+msgid "Small"
+msgstr "Mały"
+
+#: patterns/footer.php:41 patterns/footer.php:47
+msgid "About"
+msgstr "Informacje"
 
 #. Author of the theme
 #: style.css
