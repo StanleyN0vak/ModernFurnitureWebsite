@@ -14,6 +14,22 @@ header, footer {
     background-color: $primary;
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 5rem;
+
+    .ms-title {
+        margin: 1rem;
+    }
+
+    .ms-nav {
+        margin: 1rem;
+        //font-size: 1.75rem;
+        
+    }
+}
+
 h1 {
     color: $primary-text;
 }
@@ -22,15 +38,19 @@ h3 {
     color: $secondary-text;
 }
 
+.btn {
+    background-color: $primary-btn;
+
+    :hover {
+        background-color: $primary-btn-hover;
+    }
+}
+
 .ms-btn-primary{
     background: $primary-btn;
 
     a{
         background: $primary-btn;
-
-        :hover{
-            background: $primary-btn-hover;
-        }
     }
 
     :hover{

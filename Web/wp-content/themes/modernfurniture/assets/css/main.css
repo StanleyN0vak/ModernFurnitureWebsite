@@ -11867,6 +11867,9 @@ textarea.form-control-lg {
   height: 18rem;
   padding: 2rem;
 }
+.ms-hero .ms-hero-h2 {
+  color: #D3D3D3;
+}
 
 .ms-why {
   background: #D2A942;
@@ -11881,6 +11884,18 @@ header, footer {
   background-color: #D2A942;
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 5rem;
+}
+header .ms-title {
+  margin: 1rem;
+}
+header .ms-nav {
+  margin: 1rem;
+}
+
 h1, .h1 {
   color: #FFFFFF;
 }
@@ -11889,14 +11904,18 @@ h3, .h3 {
   color: #D3D3D3;
 }
 
+.btn {
+  background-color: #D2A942;
+}
+.btn :hover {
+  background-color: #f1bf3e;
+}
+
 .ms-btn-primary {
   background: #D2A942;
 }
 .ms-btn-primary a {
   background: #D2A942;
-}
-.ms-btn-primary a :hover {
-  background: #f1bf3e;
 }
 .ms-btn-primary :hover {
   background: #f1bf3e;
