@@ -1,3 +1,41 @@
 .ms-why {
     background: $primary;
+    height: 21.625rem;
+
+    .ms-why-title {
+        margin-top: -1rem;
+        padding: 2rem;
+    }
+}
+
+.ms-realization {
+    padding-bottom: 2rem;
+    .ms-realization-title {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .ms-realization-info {
+
+        .ms-realization-info-text {
+
+        }
+
+        .ms-realization-info-btn {
+
+        }
+
+    }
+}
+
+.ms-who {
+    padding-bottom: 2rem;
+    .ms-who-title {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .ms-who-text {
+
+    }
 }

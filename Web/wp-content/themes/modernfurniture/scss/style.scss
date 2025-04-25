@@ -3,6 +3,7 @@
 @import "_variables.scss";
 @import "components/heroUnit.scss";
 @import "pages/front-page.scss";
+@import "pages/services-page";
 
 
 body {
@@ -16,6 +17,8 @@ header, footer {
 
 header {
     display: flex;
+    position: sticky;
+    top: 0;
     justify-content: space-between;
     height: 5rem;
 
@@ -30,6 +33,30 @@ header {
     }
 }
 
+footer {
+    height: 14.375rem;
+    display: flex;
+    align-items: center;
+
+    h2 {
+        margin-top: 1rem;
+    }
+
+    .ms-footer-logos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .ms-footer-links {
+
+    }
+
+    .ms-footer-contacts {
+
+    }
+}
+
 h1 {
     color: $primary-text;
 }
@@ -38,26 +65,28 @@ h3 {
     color: $secondary-text;
 }
 
-.btn {
-    background-color: $primary-btn;
-
-    :hover {
-        background-color: $primary-btn-hover;
-    }
-}
-
 .ms-btn-primary{
-    background: $primary-btn;
-
     a{
         background: $primary-btn;
-    }
 
-    :hover{
-        background: $primary-btn-hover;
+        &:hover{
+            background: $primary-btn-hover;
+        }
     }
 }
 
 .ms-btn-secondary{
     background: $secondary-btn;
+}
+
+
+.ms-title-pages {
+    margin-top: 2.188rem;
+    width: min-content;
+    border-bottom: 0.313rem $primary solid;
+    padding-bottom: 0.125rem;
+}
+
+.scrim {
+    background: $primary;
 }

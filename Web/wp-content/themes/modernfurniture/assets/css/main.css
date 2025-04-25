@@ -11861,18 +11861,82 @@ textarea.form-control-lg {
   bottom: 0;
   right: 0;
 }
+.ms-hero .ms-hero-title {
+  padding-bottom: 2rem;
+}
 .ms-hero .ms-hero-step {
   background-color: #181861;
   max-width: 13rem;
   height: 18rem;
   padding: 2rem;
+  border-radius: 1.25rem;
 }
 .ms-hero .ms-hero-h2 {
   color: #D3D3D3;
 }
+.ms-hero .ms-hero-h3 {
+  color: #FFFFFF;
+}
 
 .ms-why {
   background: #D2A942;
+  height: 21.625rem;
+}
+.ms-why .ms-why-title {
+  margin-top: -1rem;
+  padding: 2rem;
+}
+
+.ms-realization {
+  padding-bottom: 2rem;
+}
+.ms-realization .ms-realization-title {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.ms-who {
+  padding-bottom: 2rem;
+}
+.ms-who .ms-who-title {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.ms-services-tiles .ms-services-tile {
+  background: #D2A942;
+  min-height: 18.75rem;
+  padding: 2rem;
+  margin: 3rem;
+}
+.ms-services-tiles .ms-services-tile h2, .ms-services-tiles .ms-services-tile .h2 {
+  font-weight: bold;
+}
+.ms-services-tiles .ms-services-tile p {
+  color: black;
+  margin-top: 3rem;
+}
+
+.ms-services-sec-section {
+  background: #D2A942;
+}
+
+.ms-services-title {
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.ms-services-steps .ms-services-step {
+  background-color: #D2A942;
+}
+
+.ms-services-contact {
+  padding-top: 7.5rem;
+  padding-bottom: 7.5rem;
+}
+.ms-services-contact .ms-services-contact-question {
+  padding-bottom: 2.5rem;
+}
+.ms-services-contact .ms-services-contact-exclamation {
+  padding-bottom: 2.5rem;
 }
 
 body {
@@ -11886,6 +11950,8 @@ header, footer {
 
 header {
   display: flex;
+  position: sticky;
+  top: 0;
   justify-content: space-between;
   height: 5rem;
 }
@@ -11896,6 +11962,19 @@ header .ms-nav {
   margin: 1rem;
 }
 
+footer {
+  height: 14.375rem;
+  display: flex;
+  align-items: center;
+}
+footer h2, footer .h2 {
+  margin-top: 1rem;
+}
+footer .ms-footer-logos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 h1, .h1 {
   color: #FFFFFF;
 }
@@ -11904,25 +11983,26 @@ h3, .h3 {
   color: #D3D3D3;
 }
 
-.btn {
-  background-color: #D2A942;
-}
-.btn :hover {
-  background-color: #f1bf3e;
-}
-
-.ms-btn-primary {
-  background: #D2A942;
-}
 .ms-btn-primary a {
   background: #D2A942;
 }
-.ms-btn-primary :hover {
+.ms-btn-primary a:hover {
   background: #f1bf3e;
 }
 
 .ms-btn-secondary {
   background: #181861;
+}
+
+.ms-title-pages {
+  margin-top: 2.188rem;
+  width: min-content;
+  border-bottom: 0.313rem #D2A942 solid;
+  padding-bottom: 0.125rem;
+}
+
+.scrim {
+  background: #D2A942;
 }
 
 /*# sourceMappingURL=main.css.map */

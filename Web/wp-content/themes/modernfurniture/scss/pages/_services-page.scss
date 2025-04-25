@@ -1,0 +1,45 @@
+.ms-services-tiles {
+
+    .ms-services-tile {
+        background: $primary;
+        min-height: 18.75rem;
+        padding: 2rem;
+        margin: 3rem;
+
+        h2 {
+            font-weight: bold;
+        }
+
+        p {
+            color: black;
+            margin-top: 3rem;
+        }
+    }
+}
+
+.ms-services-sec-section {
+    background: $primary;
+}
+
+.ms-services-title {
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.ms-services-steps {
+    .ms-services-step {
+        background-color: $primary;
+    }
+}
+
+.ms-services-contact {
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
+    .ms-services-contact-question {
+        padding-bottom: 2.5rem;
+    }
+
+    .ms-services-contact-exclamation {
+        padding-bottom: 2.5rem;
+    }
+}

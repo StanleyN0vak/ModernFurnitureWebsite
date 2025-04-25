@@ -8,6 +8,22 @@
         left: 0;
         bottom: 0;
         right: 0;
+
+        h1 {
+            //font-size: 6rem;
+        }
+
+        h2 {
+            //font-size: 2.5rem;
+        }
+
+        .ms-btn-primary {
+            //height: ;
+        }
+    }
+
+    .ms-hero-title {
+        padding-bottom: 2rem;
     }
 
     .ms-hero-step {
@@ -15,9 +31,14 @@
         max-width: 13rem;
         height: 18rem;
         padding: 2rem;
+        border-radius: 1.25rem;
     }
 
     .ms-hero-h2 {
         color: $secondary-text;
+    }
+
+    .ms-hero-h3 {
+        color: $primary-text;
     }
 }
