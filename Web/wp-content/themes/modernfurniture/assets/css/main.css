@@ -11856,7 +11856,7 @@ textarea.form-control-lg {
 }
 .ms-hero .ms-hero-header {
   position: absolute;
-  top: 10rem;
+  top: 15rem;
   left: 0;
   bottom: 0;
   right: 0;
@@ -11939,6 +11939,48 @@ textarea.form-control-lg {
   padding-bottom: 2.5rem;
 }
 
+.ms-portfolio-gallery {
+  background: #D2A942;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.ms-team-intro .ms-team-intro-wrap-img {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+.ms-team-intro .ms-team-intro-wrap-img::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(217, 217, 217, 0.25), rgb(24, 24, 97));
+  pointer-events: none;
+}
+.ms-team-intro .ms-team-intro-title {
+  margin-top: -8rem;
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 10;
+}
+
+.ms-team-member {
+  background: #D2A942;
+  margin-bottom: 2.5rem;
+}
+.ms-team-member .ms-team-member-text {
+  margin: 1rem;
+}
+.ms-team-member h3, .ms-team-member .h3 {
+  color: #181861;
+}
+.ms-team-member img {
+  padding: 1rem;
+}
+
 body {
   color: #FFFFFF;
   background-color: #181861;
@@ -11996,7 +12038,7 @@ h3, .h3 {
 
 .ms-title-pages {
   margin-top: 2.188rem;
-  width: min-content;
+  width: fit-content;
   border-bottom: 0.313rem #D2A942 solid;
   padding-bottom: 0.125rem;
 }

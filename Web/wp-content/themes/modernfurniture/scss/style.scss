@@ -4,6 +4,8 @@
 @import "components/heroUnit.scss";
 @import "pages/front-page.scss";
 @import "pages/services-page";
+@import "pages/portfolio-page";
+@import "pages/our-team-page";
 
 
 body {
@@ -82,7 +84,7 @@ h3 {
 
 .ms-title-pages {
     margin-top: 2.188rem;
-    width: min-content;
+    width: fit-content;
     border-bottom: 0.313rem $primary solid;
     padding-bottom: 0.125rem;
 }
