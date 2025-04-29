@@ -1,4 +1,5 @@
 .ms-services-tiles {
+    z-index: 1;
 
     .ms-services-tile {
         background: $primary;
@@ -13,6 +14,7 @@
         p {
             color: black;
             margin-top: 3rem;
+            font-size: clamp(1rem, 4.5vw, 1.25rem);
         }
     }
 }
@@ -21,15 +23,19 @@
     background: $primary;
 }
 
-.ms-services-title {
-    padding-top: 1.5rem;
-    padding-bottom: 1rem;
-}
+.ms-services-how-work {
+    background-color: transparent;
 
-.ms-services-steps {
-    .ms-services-step {
-        background-color: $primary;
+    .ms-services-title {
+        padding-top: 1.5rem;
+        padding-bottom: 1rem;
     }
+    
+    .ms-services-steps {
+        .ms-services-step {
+            background-color: $primary;
+        }
+    }    
 }
 
 .ms-services-contact {

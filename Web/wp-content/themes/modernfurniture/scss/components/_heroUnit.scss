@@ -1,16 +1,30 @@
 .ms-hero {
     position: relative;
     margin-bottom: 0;
+    height: auto;
 
     .ms-hero-header{
         position: absolute;
-        top: 15rem;
-        left: 0;
-        bottom: 0;
-        right: 0;
+        top: -13rem;
+
+        @media (min-width: 500px) {
+            top: -18rem;
+        }
+
+        @media (min-width: 700px) {
+           top: -25rem; 
+        }
+
+        @media (min-width: 1000px) {
+            top: -35rem;
+        }
+
+        @media (min-width: 1200px) {
+            top: -40rem;
+        }
 
         h1 {
-            //font-size: 6rem;
+            font-size: clamp(1.25rem, 4.5vw, 6rem);
         }
 
         h2 {
@@ -18,7 +32,20 @@
         }
 
         .ms-btn-primary {
-            //height: ;
+            margin-left: -1rem;
+        }
+    }
+
+    .ms-hero-header-10 {
+        @media (min-width: 992px) {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+
+        @media (min-width: 1200px) {
+            top: 10rem;
         }
     }
 
@@ -32,10 +59,13 @@
         height: 18rem;
         padding: 2rem;
         border-radius: 1.25rem;
+        width: 12rem;
+        margin: 1rem;
     }
 
     .ms-hero-h2 {
         color: $secondary-text;
+        font-size: clamp(1rem, 4.5vw, 2.5rem);
     }
 
     .ms-hero-h3 {

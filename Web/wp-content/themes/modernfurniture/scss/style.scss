@@ -6,6 +6,7 @@
 @import "pages/services-page";
 @import "pages/portfolio-page";
 @import "pages/our-team-page";
+@import "pages/contact-page";
 
 
 body {
@@ -36,7 +37,8 @@ header {
 }
 
 footer {
-    height: 14.375rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     display: flex;
     align-items: center;
 
@@ -44,18 +46,65 @@ footer {
         margin-top: 1rem;
     }
 
+    img {
+        max-width: 2.625rem;
+    }
+
     .ms-footer-logos {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
+
+        @media (min-width: 576px) {
+            align-items: normal;
+        }
+
+        a {
+            border-bottom: 2px solid $secondary;
+        }
     }
 
     .ms-footer-links {
+        display: grid;
+        justify-content: center;
 
+        @media (min-width: 576px) {
+            justify-content: baseline;
+        }
     }
 
     .ms-footer-contacts {
+        display: grid;
+        justify-content: center;
 
+        @media (min-width: 576px) {
+            justify-content: baseline;
+        }
+
+        h2 {
+            text-align: center;
+
+            @media (min-width: 576px) {
+                text-align: left;
+            }
+        }
+
+        .ms-footer-contact {
+            justify-content: center;
+
+            @media (min-width: 576px) {
+                justify-content: left;
+            }
+
+            .ms-footer-contact-img {
+                justify-content: center;
+                align-items: center;
+                img {
+                    max-width: 2.625rem;
+                }
+            }
+        }
     }
 }
 
@@ -70,6 +119,8 @@ h3 {
 .ms-btn-primary{
     a{
         background: $primary-btn;
+        border-radius: 15px;
+        font-size: clamp(0.75rem, 2.5vw, 1.5rem);
 
         &:hover{
             background: $primary-btn-hover;
@@ -87,6 +138,8 @@ h3 {
     width: fit-content;
     border-bottom: 0.313rem $primary solid;
     padding-bottom: 0.125rem;
+    font-size: clamp(3rem, 4.5vw, 8.125rem);
+    z-index: 1;
 }
 
 .scrim {

@@ -11853,13 +11853,50 @@ textarea.form-control-lg {
 .ms-hero {
   position: relative;
   margin-bottom: 0;
+  height: auto;
 }
 .ms-hero .ms-hero-header {
   position: absolute;
-  top: 15rem;
-  left: 0;
-  bottom: 0;
-  right: 0;
+  top: -13rem;
+}
+@media (min-width: 500px) {
+  .ms-hero .ms-hero-header {
+    top: -18rem;
+  }
+}
+@media (min-width: 700px) {
+  .ms-hero .ms-hero-header {
+    top: -25rem;
+  }
+}
+@media (min-width: 1000px) {
+  .ms-hero .ms-hero-header {
+    top: -35rem;
+  }
+}
+@media (min-width: 1200px) {
+  .ms-hero .ms-hero-header {
+    top: -40rem;
+  }
+}
+.ms-hero .ms-hero-header h1, .ms-hero .ms-hero-header .h1 {
+  font-size: clamp(1.25rem, 4.5vw, 6rem);
+}
+.ms-hero .ms-hero-header .ms-btn-primary {
+  margin-left: -1rem;
+}
+@media (min-width: 992px) {
+  .ms-hero .ms-hero-header-10 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .ms-hero .ms-hero-header-10 {
+    top: 10rem;
+  }
 }
 .ms-hero .ms-hero-title {
   padding-bottom: 2rem;
@@ -11870,9 +11907,12 @@ textarea.form-control-lg {
   height: 18rem;
   padding: 2rem;
   border-radius: 1.25rem;
+  width: 12rem;
+  margin: 1rem;
 }
 .ms-hero .ms-hero-h2 {
   color: #D3D3D3;
+  font-size: clamp(1rem, 4.5vw, 2.5rem);
 }
 .ms-hero .ms-hero-h3 {
   color: #FFFFFF;
@@ -11880,11 +11920,26 @@ textarea.form-control-lg {
 
 .ms-why {
   background: #D2A942;
-  height: 21.625rem;
+  padding-bottom: 3rem;
+  margin-top: -1rem;
 }
 .ms-why .ms-why-title {
   margin-top: -1rem;
   padding: 2rem;
+}
+@media (min-width: 992px) {
+  .ms-why .ms-why-cons .ms-why-con {
+    width: 13.5rem;
+  }
+}
+@media (min-width: 1400px) {
+  .ms-why .ms-why-cons .ms-why-con {
+    width: 18.125rem;
+  }
+}
+.ms-why .ms-why-cons img {
+  width: clamp(3.375rem, 4.5vw, 15rem);
+  height: auto;
 }
 
 .ms-realization {
@@ -11894,12 +11949,47 @@ textarea.form-control-lg {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
+.ms-realization .ms-realization-info .ms-realization-info-text {
+  font-size: clamp(1rem, 4.5vw, 2rem);
+}
+
+.ms-howWeWork {
+  top: 10rem;
+}
+
+.ms-how-work {
+  background-color: #D2A942;
+}
+.ms-how-work .ms-how-work-back-img {
+  display: none;
+}
+@media (min-width: 992px) {
+  .ms-how-work {
+    background-color: transparent;
+  }
+  .ms-how-work .ms-how-work-back-img {
+    display: block;
+  }
+}
+
 .ms-who {
   padding-bottom: 2rem;
 }
 .ms-who .ms-who-title {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+.ms-who img {
+  display: none;
+}
+@media (min-width: 768px) {
+  .ms-who img {
+    display: block;
+  }
+}
+
+.ms-services-tiles {
+  z-index: 1;
 }
 .ms-services-tiles .ms-services-tile {
   background: #D2A942;
@@ -11913,18 +12003,21 @@ textarea.form-control-lg {
 .ms-services-tiles .ms-services-tile p {
   color: black;
   margin-top: 3rem;
+  font-size: clamp(1rem, 4.5vw, 1.25rem);
 }
 
 .ms-services-sec-section {
   background: #D2A942;
 }
 
-.ms-services-title {
+.ms-services-how-work {
+  background-color: transparent;
+}
+.ms-services-how-work .ms-services-title {
   padding-top: 1.5rem;
   padding-bottom: 1rem;
 }
-
-.ms-services-steps .ms-services-step {
+.ms-services-how-work .ms-services-steps .ms-services-step {
   background-color: #D2A942;
 }
 
@@ -11961,24 +12054,62 @@ textarea.form-control-lg {
   pointer-events: none;
 }
 .ms-team-intro .ms-team-intro-title {
-  margin-top: -8rem;
+  margin-top: -7.5rem;
   margin-bottom: 2rem;
   position: relative;
-  z-index: 10;
+  z-index: 1;
+}
+@media (min-width: 1200px) {
+  .ms-team-intro .ms-team-intro-title {
+    margin-top: -27rem;
+  }
 }
 
 .ms-team-member {
   background: #D2A942;
   margin-bottom: 2.5rem;
+  display: grid;
+}
+@media (min-width: 768px) {
+  .ms-team-member {
+    display: flex;
+  }
 }
 .ms-team-member .ms-team-member-text {
   margin: 1rem;
+  justify-content: center;
+}
+.ms-team-member .ms-team-member-text h2, .ms-team-member .ms-team-member-text .h2 {
+  font-size: clamp(2rem, 4.5vw, 3.5rem);
+}
+.ms-team-member .ms-team-member-text h3, .ms-team-member .ms-team-member-text .h3 {
+  font-size: clamp(1.5rem, 4.5vw, 2.5rem);
 }
 .ms-team-member h3, .ms-team-member .h3 {
   color: #181861;
 }
 .ms-team-member img {
   padding: 1rem;
+  margin-bottom: -1rem;
+}
+
+.ms-contact-form-wrapper {
+  background: #D2A942;
+  padding: 1rem;
+  margin: 1rem;
+}
+.ms-contact-form-wrapper .ms-form-group {
+  margin-bottom: 0.5rem;
+}
+.ms-contact-form-wrapper .ms-form-group label {
+  margin-bottom: 0.25rem;
+}
+.ms-contact-form-wrapper .ms-form-group textarea {
+  resize: none;
+}
+.ms-contact-form-wrapper .ms-contact-form-btn {
+  background: #181861;
+  color: #FFFFFF;
 }
 
 body {
@@ -12005,18 +12136,73 @@ header .ms-nav {
 }
 
 footer {
-  height: 14.375rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   display: flex;
   align-items: center;
 }
 footer h2, footer .h2 {
   margin-top: 1rem;
 }
+footer img {
+  max-width: 2.625rem;
+}
 footer .ms-footer-logos {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
+@media (min-width: 576px) {
+  footer .ms-footer-logos {
+    align-items: normal;
+  }
+}
+footer .ms-footer-logos a {
+  border-bottom: 2px solid #181861;
+}
+footer .ms-footer-links {
+  display: grid;
+  justify-content: center;
+}
+@media (min-width: 576px) {
+  footer .ms-footer-links {
+    justify-content: baseline;
+  }
+}
+footer .ms-footer-contacts {
+  display: grid;
+  justify-content: center;
+}
+@media (min-width: 576px) {
+  footer .ms-footer-contacts {
+    justify-content: baseline;
+  }
+}
+footer .ms-footer-contacts h2, footer .ms-footer-contacts .h2 {
+  text-align: center;
+}
+@media (min-width: 576px) {
+  footer .ms-footer-contacts h2, footer .ms-footer-contacts .h2 {
+    text-align: left;
+  }
+}
+footer .ms-footer-contacts .ms-footer-contact {
+  justify-content: center;
+}
+@media (min-width: 576px) {
+  footer .ms-footer-contacts .ms-footer-contact {
+    justify-content: left;
+  }
+}
+footer .ms-footer-contacts .ms-footer-contact .ms-footer-contact-img {
+  justify-content: center;
+  align-items: center;
+}
+footer .ms-footer-contacts .ms-footer-contact .ms-footer-contact-img img {
+  max-width: 2.625rem;
+}
+
 h1, .h1 {
   color: #FFFFFF;
 }
@@ -12027,6 +12213,8 @@ h3, .h3 {
 
 .ms-btn-primary a {
   background: #D2A942;
+  border-radius: 15px;
+  font-size: clamp(0.75rem, 2.5vw, 1.5rem);
 }
 .ms-btn-primary a:hover {
   background: #f1bf3e;
@@ -12041,6 +12229,8 @@ h3, .h3 {
   width: fit-content;
   border-bottom: 0.313rem #D2A942 solid;
   padding-bottom: 0.125rem;
+  font-size: clamp(3rem, 4.5vw, 8.125rem);
+  z-index: 1;
 }
 
 .scrim {

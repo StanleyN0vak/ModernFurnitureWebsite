@@ -1,0 +1,22 @@
+.ms-contact-form-wrapper {
+    background: $primary;
+    padding: 1rem;
+    margin: 1rem;
+
+    .ms-form-group {
+        margin-bottom: 0.5rem;
+
+        label {
+            margin-bottom: 0.25rem;
+        }
+
+        textarea {
+            resize: none;
+        }
+    }
+
+    .ms-contact-form-btn {
+        background: $secondary;
+        color: $primary-text;
+    }
+}

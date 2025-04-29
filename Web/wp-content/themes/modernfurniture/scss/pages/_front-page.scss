@@ -1,10 +1,30 @@
 .ms-why {
     background: $primary;
-    height: 21.625rem;
+    padding-bottom: 3rem;
+    margin-top: -1rem;
 
     .ms-why-title {
         margin-top: -1rem;
         padding: 2rem;
+    }
+
+    .ms-why-cons {
+        @media (min-width: 992px){
+            .ms-why-con {
+                width: 13.5rem;
+            }
+        }
+
+        @media (min-width: 1400px){
+            .ms-why-con {
+                width: 18.125rem;
+            }
+        }
+
+        img {
+            width: clamp(3.375rem, 4.5vw, 15rem);
+            height: auto;
+        }
     }
 }
 
@@ -18,13 +38,26 @@
     .ms-realization-info {
 
         .ms-realization-info-text {
-
+            font-size: clamp(1rem, 4.5vw, 2rem);
         }
+    }
+}
 
-        .ms-realization-info-btn {
+.ms-howWeWork {
+    top: 10rem;
+}
 
+.ms-how-work {
+    background-color: $primary;
+
+    .ms-how-work-back-img {
+        display: none;
+    }
+    @media (min-width: 992px) {
+        background-color: transparent;
+        .ms-how-work-back-img {
+            display: block;
         }
-
     }
 }
 
@@ -35,7 +68,13 @@
         padding-bottom: 2rem;
     }
 
-    .ms-who-text {
+    img {
+        display: none;
+    }
 
+    @media (min-width: 768px) {
+        img {
+            display: block;
+        }
     }
 }
