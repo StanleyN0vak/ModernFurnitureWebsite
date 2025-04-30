@@ -2,6 +2,7 @@
 
 @import "_variables.scss";
 @import "components/heroUnit.scss";
+@import "components/wrapperImg";
 @import "pages/front-page.scss";
 @import "pages/services-page";
 @import "pages/portfolio-page";
@@ -12,6 +13,7 @@
 body {
     color: $primary-text;
     background-color: $secondary;
+    margin-top: 5rem;
 }
 
 header, footer {
@@ -20,19 +22,26 @@ header, footer {
 
 header {
     display: flex;
-    position: sticky;
+    position: fixed;
     top: 0;
     justify-content: space-between;
     height: 5rem;
+    width: 100%;
+    z-index: 1000;
 
     .ms-title {
         margin: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .ms-nav {
         margin: 1rem;
-        //font-size: 1.75rem;
-        
+        font-size: clamp(1rem, 4.5vw, 1.5rem);
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 

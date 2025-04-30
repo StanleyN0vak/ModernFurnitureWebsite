@@ -11918,6 +11918,73 @@ textarea.form-control-lg {
   color: #FFFFFF;
 }
 
+.ms-wrapper-img {
+  height: clamp(12.4rem, 49vw, 22.5rem);
+  overflow: hidden;
+  border: 3px solid #D2A942;
+}
+.ms-wrapper-img .ms-img-before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.ms-wrapper-img .ms-img-before img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.ms-wrapper-img .ms-img-after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  clip-path: inset(0 50% 0 0);
+  z-index: 2;
+}
+.ms-wrapper-img .ms-img-after img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.ms-wrapper-img .ms-scroller {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  cursor: ew-resize;
+  background: transparent;
+}
+.ms-wrapper-img .ms-scroller .ms-scroller-thumb img {
+  width: 100%;
+  height: 3.75rem;
+  display: block;
+}
+.ms-wrapper-img .ms-scroller::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -100vh;
+  bottom: -100vh;
+  width: 2px;
+  background: #D2A942;
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+.ms-wrapper-img .ms-scroller:hover::before {
+  background: #D2A942;
+}
+.ms-wrapper-img .ms-scroller.scrolling {
+  cursor: grabbing;
+}
+
 .ms-why {
   background: #D2A942;
   padding-bottom: 3rem;
@@ -12115,6 +12182,7 @@ textarea.form-control-lg {
 body {
   color: #FFFFFF;
   background-color: #181861;
+  margin-top: 5rem;
 }
 
 header, footer {
@@ -12123,16 +12191,25 @@ header, footer {
 
 header {
   display: flex;
-  position: sticky;
+  position: fixed;
   top: 0;
   justify-content: space-between;
   height: 5rem;
+  width: 100%;
+  z-index: 1000;
 }
 header .ms-title {
   margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 header .ms-nav {
   margin: 1rem;
+  font-size: clamp(1rem, 4.5vw, 1.5rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 footer {
