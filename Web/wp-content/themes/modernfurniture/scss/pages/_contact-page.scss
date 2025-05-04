@@ -18,5 +18,10 @@
     .ms-contact-form-btn {
         background: $secondary;
         color: $primary-text;
+        transition: background 200ms;
+
+        &:hover {
+            background: $secondary-btn-hover;
+        }
     }
 }

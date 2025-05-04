@@ -3,6 +3,7 @@
 @import "_variables.scss";
 @import "components/heroUnit.scss";
 @import "components/wrapperImg";
+@import "components/carousel";
 @import "pages/front-page.scss";
 @import "pages/services-page";
 @import "pages/portfolio-page";
@@ -18,6 +19,21 @@ body {
 
 header, footer {
     background-color: $primary;
+
+    a {
+        transition: color 200ms;
+        &:hover {
+            color: $secondary;
+        }
+
+        span {
+            transition: color 200ms;
+
+            &:hover {
+                color: $secondary;
+            }
+        }
+    }
 }
 
 header {
@@ -130,6 +146,7 @@ h3 {
         background: $primary-btn;
         border-radius: 15px;
         font-size: clamp(0.75rem, 2.5vw, 1.5rem);
+        transition: background 200ms;
 
         &:hover{
             background: $primary-btn-hover;
@@ -139,6 +156,11 @@ h3 {
 
 .ms-btn-secondary{
     background: $secondary-btn;
+    transition: background 200ms;
+
+    &:hover {
+        background: $secondary-btn-hover;
+    }
 }
 
 

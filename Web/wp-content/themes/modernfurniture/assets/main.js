@@ -1,4 +1,5 @@
 jQuery(function($){
+  //IMG Slider
   const $wrapper = $('.ms-wrapper-img');
   const $afterImg = $('.ms-img-after');
   const $scroller = $('.ms-scroller');
@@ -52,4 +53,18 @@ jQuery(function($){
 
   initSlider();
   $(window).on('resize', initSlider);
+
+  //Carousel gallery
+  $('#carousel').carousel({
+    interval: 2000,
+    wrap: true 
+  });
+
+  $('.carousel-control-prev').click(function() {
+      $('#carousel').carousel('prev');
+  });
+
+  $('.carousel-control-next').click(function() {
+      $('#carousel').carousel('next');
+  });
 });

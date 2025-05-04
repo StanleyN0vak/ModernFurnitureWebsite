@@ -1,0 +1,48 @@
+.carousel {
+    .carousel-inner {
+        background: $secondary;
+        text-align: center;
+        width: 80%;
+        display: flex;
+        transition: transform 0.6s ease;
+        z-index: 10;
+    
+        .carousel-item {
+            figure {
+                margin-bottom: 0;
+    
+                img {
+                    padding: 1rem;
+                }
+            }
+        }
+    }
+    
+    .carousel-control-prev {
+        left: 2%;
+        opacity: 1;
+        transition: filter 200ms;
+
+        &:hover {
+            filter: brightness(1.4);
+        }
+    }
+
+    .carousel-control-next {
+        right: 1.8%;
+        opacity: 1;
+        transition: filter 200ms;
+
+        &:hover {
+            filter: brightness(1.4);
+        }
+    }
+
+    .carousel-control-prev-icon {
+        background-image: url("../../assets/images/LeftArrow.svg");
+    }
+
+    .carousel-control-next-icon {
+        background-image: url("../../assets/images/RightArrow.svg");
+    }
+}

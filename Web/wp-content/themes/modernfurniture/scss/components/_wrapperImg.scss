@@ -49,6 +49,11 @@
       width: 100%;
       height: 3.75rem;
       display: block;
+      transition: filter 200ms;
+
+      &:hover {
+        filter: brightness(1.2);
+      }
     }
 
     &::before {

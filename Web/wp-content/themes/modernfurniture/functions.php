@@ -15,6 +15,14 @@ function modern_furniture_enqueue_scripts() {
         null,
         true
     );
+
+    wp_enqueue_script(
+        'bootstrap-js',
+        get_template_directory_uri() . '/scss/bootstrap/bootstrap.bundle.min.js',
+        array('jquery'),
+        null,
+        true
+    );
 }
 add_action('wp_enqueue_scripts', 'modern_furniture_enqueue_scripts');
 
@@ -30,6 +38,13 @@ function modern_furniture_contact_form_shortcode() {
     return ob_get_clean();
 }
 add_shortcode('contact_form', 'modern_furniture_contact_form_shortcode');
+
+function modern_furniture_carousel_buttons_shortcode() {
+    ob_start();
+    get_template_part('patterns/carousel-buttons');
+    return ob_get_clean();
+}
+add_shortcode('carousel_buttons', 'modern_furniture_carousel_buttons_shortcode');
 
 function ms_handle_contact_form_submission() {
     if (isset($_POST['action']) && $_POST['action'] === 'send_contact_form'){
